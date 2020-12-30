@@ -1,0 +1,297 @@
+body {
+    margin:0px;
+    height:100vh;
+    display:flex;
+    background-color:rgb(250, 250, 250);
+    padding-top:50px;
+    font-size:14px;
+}
+
+#navbar_wrapper {
+    height:50px;
+    width:100%;
+    background-color:white;
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:flex;
+    justify-content:center;
+    border-bottom:1px solid rgb(240, 240, 240);
+}
+
+#navbar {
+    height:50px;
+    width:600px;
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 20px;
+}
+
+#navbar_logo {
+    height:20px;
+}
+
+#navbar_menu {
+    display:flex;
+}
+
+.navbar_item {
+    margin-left:20px;
+    color:grey;
+    cursor:pointer;
+}
+
+.navbar_item a,
+.navbar_item a:hover,
+.navbar_item a:focus,
+.navbar_item a:active,
+.navbar_item a:visited {
+    color:grey;
+    text-decoration:none;
+}
+
+.navbar_item:hover {
+    opacity:0.7;
+}
+
+#content_area_wrapper {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+#content_area {
+    width:600px;
+    padding:40px 20px;
+    max-width:100%;
+}
+
+#create_post_wrapper {
+    width:100%;
+    padding:10px;
+    background-color:white;
+    display:flex;
+    border:1px solid rgb(240, 240, 240);
+    border-radius:3px;
+    margin-bottom:30px;
+}
+
+#create_post_avatar {
+    height:30px;
+    width:30px;
+    border-radius:100%;
+    background-size:cover;
+    background-position:center;
+    margin-right:10px;
+}
+
+#create_post_input {
+    height:30px;
+    flex:1;
+    background-color:rgb(250, 250, 250);
+    border:1px solid rgb(230, 230, 230);
+    border-radius:100px;
+    padding:0px 15px;
+}
+
+.post_wrapper {
+    width:100%;
+    padding:10px;
+    background-color:white;
+    border:1px solid rgb(240, 240, 240);
+    border-radius:3px;
+    margin-bottom:10px;
+}
+
+.post_header {
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+
+.post_header a,
+.post_header a:hover,
+.post_header a:visited,
+.post_header a:active,
+.post_header a:focus {
+    color:black;
+}
+
+.post_avatar {
+    height:40px;
+    width:40px;
+    background-size:cover;
+    background-position:center;
+    border-radius:100%;
+    margin-right:10px;
+}
+
+.post_details {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+}
+
+.post_name {
+    font-weight:bold;
+}
+
+.post_date {
+    color:grey;
+}
+
+.post_follow_button {
+    background-color:#FF7755;
+    color:white;
+    padding:5px 10px;
+    border-radius:3px;
+}
+
+.post_share_button {
+    background-color:#4267B2;
+    color:white;
+    padding:5px 10px;
+    margin-left:10px;
+    border-radius:3px;
+}
+
+.post_share_button svg {
+    height:14px;
+}
+
+.post_follow_button:hover,
+.post_share_button:hover {
+    opacity:0.7;
+    cursor:pointer;
+}
+
+.post_container {
+    padding:10px 0px;
+}
+
+.post_comment_section {
+    width:100%;
+}
+
+.post_comment_input {
+    width:100%;
+    height:30px;
+    background-color:rgb(250, 250, 250);
+    border-radius:100px;
+    border:1px solid rgb(230, 230, 230);
+    padding:0px 15px;
+    margin-top:10px;
+}
+
+.post_comment_wrapper {
+    width:100%;
+    padding:0px 10px;
+    margin-top:20px;
+    border-left:2px solid rgb(200, 200, 200);
+    color:rgb(100, 100, 100);
+}
+
+.post_comment_header {
+    width:100%;
+    display:flex;
+}
+
+.post_comment_wrapper a,
+.post_comment_wrapper a:hover,
+.post_comment_wrapper a:visited,
+.post_comment_wrapper a:active,
+.post_comment_wrapper a:focus {
+    color:black;
+}
+
+.post_comment_avatar {
+    background-size:cover;
+    background-position:center;
+    border-radius:100%;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+}
+
+.post_comment_name {
+    font-weight:bold;
+}
+
+#profile_area {
+    width:100%;
+    margin-bottom:50px;
+    display:flex;
+}
+
+#profile_avatar {
+    height:80px;
+    width:80px;
+    border-radius:100%;
+    margin-right:20px;
+    background-size:cover;
+    background-position:center;
+}
+
+#profile_description {
+    display:flex;
+    justify-content:center;
+    flex:1;
+    flex-direction:column;
+}
+
+#profile_name {
+    display:flex;
+    justify-content:space-between;
+    font-size:16px;
+}
+
+#profile_posts,
+#profile_following {
+    color:grey;
+}
+
+#logout_button svg {
+    height:20px;
+}
+
+#logout_button:hover {
+    opacity:0.7;
+    cursor:pointer;
+}
+
+.profile_follow_button {
+    background-color:#FF7755;
+    color:white;
+    padding:2px 10px;
+    border-radius:3px;
+    font-size:14px;
+    border:none;
+}
+
+.profile_unfollow_button {
+    background-color:rgb(200, 200, 200);
+    color:grey;
+    padding:2px 10px;
+    border-radius:3px;
+    font-size:14px;
+    border:none;
+}
+
+#profile_follow_button:hover,
+#profile_unfollow_button:hover {
+    opacity:0.7;
+}
+
+#feed_placeholder {
+    width:60%;
+    display:block;
+    margin:50px auto;
+}
+
+#feed_placeholder_auto {
+    width:60%;
+    display:none;
+    margin:50px auto;
+}

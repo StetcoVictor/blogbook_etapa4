@@ -1,0 +1,12 @@
+RewriteEngine On
+
+
+RewriteRule ^login?$ index.php
+RewriteRule ^register?$ register.php
+RewriteRule ^home?$ home.php
+RewriteRule ^discover?$ discover.php
+RewriteRule ^profile?$ profile.php
+RewriteRule ^profile/([0-9a-zA-Z]+) profile.php?u=$1
+
+
+RewriteRule ^sdfgsdfgsdfgdsfgdsfg/([0-9a-zA-Z]+) sdfgsdfgsdfgsdfgdsfgsdsdfg.php?dashcategory=$1
